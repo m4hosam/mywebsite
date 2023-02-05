@@ -1,13 +1,10 @@
-
+import Navbar from "./Navbar/Navbar"
+import React, { useEffect, useState } from "react"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hello</p>
-      </header>
-    </div>
-  );
+    <Navbar />
+  )
 }
 
 export default App;
