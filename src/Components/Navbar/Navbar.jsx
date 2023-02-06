@@ -38,7 +38,7 @@ function DrawerAppBar(props) {
 
             <List>
                 {navItems.map((item) => (
-                    <ListItem key={item} disablePadding>
+                    <ListItem key={item} >
                         <ListItemButton sx={{
                             margin: '1rem',
                             color: COLORS.white, backgroundColor: COLORS.black3,
