@@ -20,12 +20,12 @@ import { COLORS } from "../Colors"
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 // import photo from '../Images/logo.jpg'
 
-const drawerWidth = 280;
+const drawerWidth = 260;
 const navItems = ['About', 'Experience', 'Projects', 'Contact'];
 
 const variants = {
-    open: { opacity: 1, rotate: 360, y: 0 },
-    closed: { opacity: 1, rotate: 180, y: -5 },
+    open: { rotate: 0, y: 0 },
+    closed: { rotate: -180, y: -8 },
 }
 
 function DrawerAppBar(props) {
@@ -77,7 +77,7 @@ function DrawerAppBar(props) {
     return (
         <Box sx={{ display: 'flex' }}>
             <AppBar component="nav" sx={{ backgroundColor: COLORS.black1 }}>
-                <Toolbar sx={{ justifyContent: 'space-between', mx: 2 }}>
+                <Toolbar sx={{ justifyContent: 'space-between', mx: { xs: 0, sm: 3 } }}>
                     <img style={{ width: 70 }} src={logo} alt="logo" />
 
                     <Box sx={{ display: { xs: 'none', md: 'block' }, mr: 5 }}>
@@ -122,7 +122,7 @@ function DrawerAppBar(props) {
                                 animate={!mobileOpen ? "open" : "closed"}
                                 variants={variants}
                             >
-                                <BiMenuAltRight />
+                                <BiMenuAltRight style={{ fontSize: '32px' }} />
                             </motion.nav>
                         ) : (
                             <motion.nav

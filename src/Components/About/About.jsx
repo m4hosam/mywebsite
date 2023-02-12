@@ -15,7 +15,23 @@ export default function Hiro() {
 
     return (
         <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, justifyContent: 'space-between', height: '80vh', alignItems: 'center' }} >
-            <img src={logo} alt="Logo" style={{ width: '25rem' }} />
+            <motion.div
+                initial={{ scale: 0 }}
+                animate={{ rotate: 360, scale: 1 }}
+                whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 1 },
+                }}
+                whileTap={{ scale: 0.9 }}
+                transition={{
+                    type: "spring",
+                    stiffness: 260,
+                    damping: 20
+                }}
+            >
+                <img src={logo} alt="Logo" style={{ width: '22rem' }} />
+            </motion.div>
+
             <Box sx={{ width: { xs: '100%', md: '50%' } }}>
                 <Typography variant="h5" color={COLORS.white2}>Hi, I'm</Typography>
                 <Typography variant="h3" color={COLORS.white}>Mohamed Hosam</Typography>
@@ -26,16 +42,6 @@ export default function Hiro() {
                         <p class="text-xl font-bold text-gray-300">Software Engineer</p>
                         <p className="text-md font-light text-gray-400 ">I study Computer Engineering "3rd Year" at Kocaeli University in Turkey. In the Past 3 years i have made a lot of projects in Software and Web development fields. I have created 2 big projects that deal with database (SQL, MongoDB). One of them is interactive comment section the other one is bank management system. You can see my projects in the project section.</p> */}
             </Box>
-            <motion.div
-                className="container"
-                initial={{ scale: 0 }}
-                animate={{ rotate: 180, scale: 1 }}
-                transition={{
-                    type: "spring",
-                    stiffness: 260,
-                    damping: 20
-                }}
-            />
 
         </Box>
 
