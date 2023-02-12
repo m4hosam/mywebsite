@@ -1,5 +1,6 @@
 import Navbar from "./Navbar/Navbar"
-import React, { useEffect, useState } from "react"
+import About from "./About/About"
+import React from "react"
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
@@ -11,11 +12,12 @@ function App() {
       {/* The content of my CV will be listed below */}
       <Container fixed>
         <Navbar />
+        <About />
 
-        <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} />
-        <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} />
-        <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} />
-        <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} />
+        {/* <Box sx={{ bgcolor: '#4d4d4d', height: '100vh' }} />
+        <Box sx={{ bgcolor: '#4d4d4d', height: '100vh' }} />
+        <Box sx={{ bgcolor: '#4d4d4d', height: '100vh' }} />
+        <Box sx={{ bgcolor: '#4d4d4d', height: '100vh' }} /> */}
       </Container>
     </>
   )

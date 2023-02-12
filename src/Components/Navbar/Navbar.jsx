@@ -14,6 +14,8 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
+import logo from '../assets/logo.png';
+import resume from "../assets/resume.pdf"
 import { COLORS } from "../Colors"
 // import photo from '../Images/logo.jpg'
 
@@ -30,16 +32,12 @@ function DrawerAppBar(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', color: COLORS.white }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
-                <img style={{ width: 70, height: 70 }} src={process.env.PUBLIC_URL + '/Images/m4h.png'} />
-            </Typography>
 
-            <Divider sx={{ mx: 5, my: 5 }} color='#fff' />
-
-            <List>
+            <List sx={{ mt: 10 }}>
                 {navItems.map((item) => (
-                    <ListItem key={item} >
+                    <ListItem key={item} disablePadding>
                         <ListItemButton sx={{
+                            borderRadius: '7px',
                             margin: '1rem',
                             color: COLORS.white, backgroundColor: COLORS.black3,
                             ':hover': {
@@ -50,7 +48,21 @@ function DrawerAppBar(props) {
                         </ListItemButton>
                     </ListItem>
                 ))}
+
             </List>
+
+
+            <Button href={resume} variant="contained" sx={{
+                px: 10,
+                mt: 10,
+                textTransform: 'none',
+                color: COLORS.white, backgroundColor: COLORS.goldenDark,
+                ':hover': {
+                    bgcolor: COLORS.golden,
+                }
+            }}>
+                Resume
+            </Button>
         </Box>
     );
 
@@ -59,21 +71,16 @@ function DrawerAppBar(props) {
     return (
         <Box sx={{ display: 'flex' }}>
             <AppBar component="nav" sx={{ backgroundColor: COLORS.black1 }}>
-                <Toolbar>
+                <Toolbar sx={{ justifyContent: 'space-between', mx: 2 }}>
+                    <img style={{ width: 70 }} src={logo} alt="logo" />
 
-                    <Typography
-                        component="div"
-                        sx={{ flexGrow: 1, display: { xs: 'block', sm: 'block' } }}
-                    >
-                        <img style={{ width: 70, height: 70 }} src={process.env.PUBLIC_URL + '/Images/logo.jpg'} />
-                    </Typography>
-
-
-
-                    <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                    <Box sx={{ display: { xs: 'none', md: 'block' }, mr: 5 }}>
                         {navItems.map((item) => (
                             <Button key={item} sx={{
+                                px: 3,
+                                textTransform: 'none',
                                 marginRight: '1rem',
+                                fontSize: '15px',
                                 color: COLORS.white, backgroundColor: COLORS.black1,
                                 ':hover': {
                                     bgcolor: COLORS.black4,
@@ -83,14 +90,25 @@ function DrawerAppBar(props) {
                             </Button>
                         ))}
                     </Box>
+                    <Button href={resume} variant="contained" sx={{
+                        px: 2,
+                        display: { xs: 'none', sm: 'block' },
+                        textTransform: 'none',
+                        color: COLORS.white, backgroundColor: COLORS.goldenDark,
+                        ':hover': {
+                            bgcolor: COLORS.golden,
+                        }
+                    }}>
+                        Resume
+                    </Button>
+
 
                     <IconButton
-
                         color="inherit"
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
-                        sx={{ display: { sm: 'none' }, marginLeft: 'auto', justifyContent: 'flex-end' }}
+                        sx={{ display: { sm: 'none' }, marginLeft: 'auto', justifyContent: 'flex-end', fontSize: '30px' }}
                     >
                         {!mobileOpen ? (
                             <BiMenuAltRight />
