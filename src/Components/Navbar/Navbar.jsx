@@ -17,10 +17,16 @@ import { AiOutlineClose } from "react-icons/ai";
 import logo from '../assets/logo.png';
 import resume from "../assets/resume.pdf"
 import { COLORS } from "../Colors"
+import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 // import photo from '../Images/logo.jpg'
 
 const drawerWidth = 280;
 const navItems = ['About', 'Experience', 'Projects', 'Contact'];
+
+const variants = {
+    open: { opacity: 1, rotate: 360, y: 0 },
+    closed: { opacity: 1, rotate: 180, y: -5 },
+}
 
 function DrawerAppBar(props) {
     const { window } = props;
@@ -111,9 +117,21 @@ function DrawerAppBar(props) {
                         sx={{ display: { sm: 'none' }, marginLeft: 'auto', justifyContent: 'flex-end', fontSize: '30px' }}
                     >
                         {!mobileOpen ? (
-                            <BiMenuAltRight />
+                            <motion.nav
+                                color='white'
+                                animate={!mobileOpen ? "open" : "closed"}
+                                variants={variants}
+                            >
+                                <BiMenuAltRight />
+                            </motion.nav>
                         ) : (
-                            <AiOutlineClose />
+                            <motion.nav
+                                color='white'
+                                animate={!mobileOpen ? "open" : "closed"}
+                                variants={variants}
+                            >
+                                <AiOutlineClose />
+                            </motion.nav>
                         )}
                     </IconButton>
                 </Toolbar>

@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import logo from "../assets/m4h.png"
 import { COLORS } from '../Colors';
+import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 
 
 
@@ -25,6 +26,17 @@ export default function Hiro() {
                         <p class="text-xl font-bold text-gray-300">Software Engineer</p>
                         <p className="text-md font-light text-gray-400 ">I study Computer Engineering "3rd Year" at Kocaeli University in Turkey. In the Past 3 years i have made a lot of projects in Software and Web development fields. I have created 2 big projects that deal with database (SQL, MongoDB). One of them is interactive comment section the other one is bank management system. You can see my projects in the project section.</p> */}
             </Box>
+            <motion.div
+                className="container"
+                initial={{ scale: 0 }}
+                animate={{ rotate: 180, scale: 1 }}
+                transition={{
+                    type: "spring",
+                    stiffness: 260,
+                    damping: 20
+                }}
+            />
+
         </Box>
 
     )
