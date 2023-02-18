@@ -1,7 +1,7 @@
 import Navbar from "./Navbar/Navbar"
 import About from "./About/About"
 import Experience from "./Experience/Experience"
-import Experience2 from "./Experience/Experience2"
+// import Experience2 from "./Experience/Experience2"
 import React from "react"
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
