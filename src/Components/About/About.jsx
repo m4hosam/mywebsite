@@ -16,11 +16,11 @@ export default function Hiro() {
     return (
         <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, justifyContent: 'space-between', height: '80vh', alignItems: 'center' }} >
             <motion.div
-                initial={{ scale: 0 }}
+                initial={{ rotate: 320, scale: 0 }}
                 animate={{ rotate: 360, scale: 1 }}
                 whileHover={{
                     scale: 1.1,
-                    transition: { duration: 1 },
+                    transition: { duration: .5 },
                 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{
