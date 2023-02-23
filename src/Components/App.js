@@ -3,7 +3,6 @@ import About from "./About/About"
 import Experience from "./Experience/Experience"
 import Projects from "./Projects/Projects"
 import React from "react"
-import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
 
@@ -16,7 +15,9 @@ function App() {
         <Navbar />
         <About />
         <Experience />
-        <Projects />
+        <Projects flexDirection="row-reverse" left />
+        <Projects flexDirection="row" right />
+        <Projects flexDirection="row-reverse" left />
 
         {/* <Box sx={{ bgcolor: '#4d4d4d', height: '100vh' }} />
         <Box sx={{ bgcolor: '#4d4d4d', height: '100vh' }} />

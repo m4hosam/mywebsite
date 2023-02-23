@@ -1,10 +1,9 @@
 import React from 'react'
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import logo from "../assets/m4h.png"
 import { COLORS } from '../Colors';
-import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion/dist/framer-motion";
 
 
 
