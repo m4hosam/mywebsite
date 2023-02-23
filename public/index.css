@@ -17,6 +17,23 @@ body {
     color: white;
 }
 
+.icon:hover {
+    scale: 1.02;
+
+    transform: translateY(-5px);
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+.icon {
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-delay: 0s;
+    transition-property: all;
+}
+
 /* code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;

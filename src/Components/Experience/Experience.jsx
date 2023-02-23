@@ -8,6 +8,8 @@ import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { motion } from "framer-motion/dist/framer-motion";
 import { COLORS } from '../Colors';
+import { FaRegShareSquare } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
 
 
 
@@ -88,9 +90,9 @@ export default function VerticalTabs() {
             sx={{
                 my: 20, flexGrow: 1,
                 bgcolor: COLORS.black2, display: 'flex',
-                height: 350, mx: { xs: 0, md: 10 }, p: 1,
+                mx: { xs: 0, md: 10 }, p: 1,
                 borderRadius: '5px',
-                flexDirection: { xs: 'column', md: 'row' }
+                flexDirection: { xs: 'column', md: 'row' }, minHeight: '22rem'
             }}
         >
             <Tabs
@@ -102,8 +104,8 @@ export default function VerticalTabs() {
                 aria-label="Vertical tabs example"
                 TabIndicatorProps={{ style: { background: "#fff" } }}
                 sx={{
-                    borderRight: 1, borderColor: 'divider', '.MuiTabs-indicator': {
-                        left: 0,
+                    borderRight: 1, borderColor: COLORS.black3, '.MuiTabs-indicator': {
+                        left: 0
                     },
                     [`& .${tabsClasses.scrollButtons}`]: {
                         '&.Mui-disabled': { opacity: 0.3 },
@@ -115,44 +117,48 @@ export default function VerticalTabs() {
             >
                 <StyledTab label="Kocaeli University" {...a11yProps(0)} />
                 <StyledTab label="Freelance" {...a11yProps(1)} />
-                {/* <StyledTab label="Item Three" {...a11yProps(2)} />
-                <StyledTab label="Item Four" {...a11yProps(3)} />
-                <StyledTab label="Item Five" {...a11yProps(4)} />
-                <StyledTab label="Item Six" {...a11yProps(5)} />
-                <StyledTab label="Item Seven" {...a11yProps(6)} /> */}
             </Tabs>
-            <TabPanel value={value} index={0}>
-
-                <Typography variant="h5" color={COLORS.white2}>Hi, I'm</Typography>
-                <Typography variant="h3" color={COLORS.white}>Mohamed Hosam</Typography>
-                <Typography variant="h5" color={COLORS.white}>Software Engineer</Typography>
-                <Typography variant="h9" color={COLORS.white2}>I study Computer Engineering "3rd Year" at Kocaeli University in Turkey. In the Past 3 years i have made a lot of projects in Software and Web development fields. I have created 2 big projects that deal with database (SQL, MongoDB). One of them is interactive comment section the other one is bank management system. You can see my projects in the project section.</Typography>
-
-            </TabPanel>
-            <TabPanel value={value} index={1}>
-
-                <Typography variant="h5" color={COLORS.white2}>Hi, I'm</Typography>
-                <Typography variant="h3" color={COLORS.white}>Mohamed Hosam</Typography>
-                <Typography variant="h5" color={COLORS.white}>Software Engineer</Typography>
-                <Typography variant="h9" color={COLORS.white2}>I study Computer Engineering "3rd Year" at Kocaeli University in Turkey. In the Past 3 years i have made a lot of projects in Software and Web development fields. I have created 2 big projects that deal with database (SQL, MongoDB). One of them is interactive comment section the other one is bank management system. You can see my projects in the project section.</Typography>
 
 
+            <TabPanel value={value} index={0} sx={{ maxWidth: { xs: '100', md: '80%' } }}>
+                <Typography variant="h8" color={COLORS.white2}>Jun. 2022 ‑ Nov. 2022</Typography>
+                <Box sx={{ display: 'flex', felxDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <Typography variant="h6" color={COLORS.white}>FULL STACK DEVELOPER</Typography>
+                    <a href='https://webscrapingcimri.netlify.app/'>
+                        <FaRegShareSquare className='icon' color='white' style={{ fontSize: '20px', marginLeft: '20%' }} />
+                    </a>
+                </Box>
+                <Box sx={{ my: 3 }}>
+                    <ul style={{ color: COLORS.white2, listStyleType: 'square' }}>
+                        <li> Worked on 'Yemek Bursu Website' and was responsible of student application form and its security. We used ASP.Net
+                            MVC framework to develop the whole website.</li>
+                        <li>Implemented a dynamic search engine to search on any laptop or specific seller.</li>
+                        <li>Made sure the student is authenticated and securely logged in to apply to the scholarship.</li>
+                        <li>Implemented an application view page for students to update or delete their application.</li>
+                        <li>Implemented input validation control to make sure student fill all fields in the page.</li>
+                        <li>Was responsible to solve any bugs or issues that any student might have after deploying the website.</li>
+
+                    </ul>
+                </Box>
             </TabPanel>
-            {/* <TabPanel value={value} index={2}>
-                Item Three
+
+
+            <TabPanel value={value} index={1} sx={{ position: 'relative', maxWidth: { xs: '100', md: '80%' } }}>
+                <Typography variant="h8" color={COLORS.white2}>Jun. 2020 ‑ Oct. 2020</Typography>
+                <Box sx={{ display: 'flex', felxDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <Typography variant="h6" color={COLORS.white}>Motion Graphic Designer</Typography>
+                    <a href='https://vimeo.com/mhosam'>
+                        <FaRegShareSquare className='icon' color='white' style={{ fontSize: '20px', marginLeft: '20%' }} />
+                    </a>
+                </Box>
+                <Box sx={{ my: 3 }}>
+                    <ul style={{ color: COLORS.white2, listStyleType: 'square' }}>
+                        <li>Worked on some logo animation videos with Adobe After Effects Tool for some freelance jobs.</li>
+                        <li>Worked on some video Editing and motion graphics projects that are listed in my vimeo page.</li>
+
+                    </ul>
+                </Box>
             </TabPanel>
-            <TabPanel value={value} index={3}>
-                Item Four
-            </TabPanel>
-            <TabPanel value={value} index={4}>
-                Item Five
-            </TabPanel>
-            <TabPanel value={value} index={5}>
-                Item Six
-            </TabPanel>
-            <TabPanel value={value} index={6}>
-                Item Seven
-            </TabPanel> */}
         </Box >
     );
 }

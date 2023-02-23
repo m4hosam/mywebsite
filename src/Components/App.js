@@ -15,9 +15,7 @@ function App() {
         <Navbar />
         <About />
         <Experience />
-        <Projects flexDirection="row-reverse" left />
-        <Projects flexDirection="row" right />
-        <Projects flexDirection="row-reverse" left />
+        <Projects />
 
         {/* <Box sx={{ bgcolor: '#4d4d4d', height: '100vh' }} />
         <Box sx={{ bgcolor: '#4d4d4d', height: '100vh' }} />
