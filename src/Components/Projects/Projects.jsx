@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import img1 from '../assets/webScrap.png'
 import img2 from '../assets/interactiveCommentSection1.png'
 import img3 from '../assets/bankMangementSystem.png'
+import img4 from '../assets/HarryPotter.png'
 
 const data = {
     card1: {
@@ -41,6 +42,19 @@ const data = {
             'Implemented loan management system with interest calculator over the requested time of the loan (credit).'
         ]
     }
+    ,
+    card4: {
+        title: 'Harry Potter Android Game',
+        projectType: 'Android Application',
+        preview: 'https://github.com/m4hosam/Harry-Potter-Android-Game',
+        github: 'https://github.com/m4hosam/Harry-Potter-Android-Game',
+        skills: ['Kotlin', 'Android Studio', 'FireBase'],
+        image: img4,
+        description: ['The Harry Potter themed card game allows players to test their memory skills by matching pairs of upside-down cards to earn points.',
+            'With three different levels of difficulty, the game provides a range of challenges suitable for players of all skill levels.',
+            'Featuring iconic characters from the Harry Potter universe, the game offers a fun and engaging way to interact with the magical world of Hogwarts.'
+        ]
+    }
 }
 
 
@@ -54,6 +68,7 @@ export default function Projects(props) {
             <ProjectCard flexDirection="row" right data={data.card1} />
             <ProjectCard flexDirection="row-reverse" data={data.card2} />
             <ProjectCard flexDirection="row" right data={data.card3} />
+            <ProjectCard flexDirection="row-reverse" data={data.card4} />
         </Box>
     );
 }
