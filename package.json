@@ -1,7 +1,7 @@
 {
   "name": "my-website",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://m4hosam.github.io/mywebsite",
   "dependencies": {
     "@emotion/react": "^11.10.5",
