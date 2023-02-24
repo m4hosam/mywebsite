@@ -9,7 +9,6 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { motion } from "framer-motion/dist/framer-motion";
 import { COLORS } from '../Colors';
 import { FaRegShareSquare } from "react-icons/fa";
-import { AiFillGithub } from "react-icons/ai";
 
 
 
