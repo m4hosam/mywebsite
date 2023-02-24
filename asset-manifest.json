@@ -1,5 +1,5 @@
 {
-  "main.css": "/mywebsite/static/css/main.d892c741.chunk.css",
+  "main.css": "/mywebsite/static/css/main.7cd6fd9b.chunk.css",
   "main.js": "/mywebsite/static/js/main.f7cd965b.chunk.js",
   "main.js.map": "/mywebsite/static/js/main.f7cd965b.chunk.js.map",
   "runtime~main.js": "/mywebsite/static/js/runtime~main.8e5ad122.js",
@@ -7,9 +7,9 @@
   "static/js/2.00a3cfc5.chunk.js": "/mywebsite/static/js/2.00a3cfc5.chunk.js",
   "static/js/2.00a3cfc5.chunk.js.map": "/mywebsite/static/js/2.00a3cfc5.chunk.js.map",
   "index.html": "/mywebsite/index.html",
-  "precache-manifest.7287420bae8b3cb6f451175eaae3dbeb.js": "/mywebsite/precache-manifest.7287420bae8b3cb6f451175eaae3dbeb.js",
+  "precache-manifest.3a8f638f9312a2fc740d500bac43381f.js": "/mywebsite/precache-manifest.3a8f638f9312a2fc740d500bac43381f.js",
   "service-worker.js": "/mywebsite/service-worker.js",
-  "static/css/main.d892c741.chunk.css.map": "/mywebsite/static/css/main.d892c741.chunk.css.map",
+  "static/css/main.7cd6fd9b.chunk.css.map": "/mywebsite/static/css/main.7cd6fd9b.chunk.css.map",
   "static/media/HarryPotter.png": "/mywebsite/static/media/HarryPotter.759fb665.png",
   "static/media/bankMangementSystem.png": "/mywebsite/static/media/bankMangementSystem.eda2402a.png",
   "static/media/interactiveCommentSection1.png": "/mywebsite/static/media/interactiveCommentSection1.bda779ee.png",

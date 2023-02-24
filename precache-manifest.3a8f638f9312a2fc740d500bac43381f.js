@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "3b816533888d78c84c4e",
-    "url": "/mywebsite/static/css/main.d892c741.chunk.css"
+    "revision": "5b138c69c28ff8c5ac4b",
+    "url": "/mywebsite/static/css/main.7cd6fd9b.chunk.css"
   },
   {
-    "revision": "3b816533888d78c84c4e",
+    "revision": "5b138c69c28ff8c5ac4b",
     "url": "/mywebsite/static/js/main.f7cd965b.chunk.js"
   },
   {
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/mywebsite/static/media/HarryPotter.759fb665.png"
   },
   {
-    "revision": "ba2bd8d0a040e5a27b980e060a412e74",
+    "revision": "009512753c9cd4d801c3ed69ccc66354",
     "url": "/mywebsite/index.html"
   }
 ];
