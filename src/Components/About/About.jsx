@@ -1,7 +1,7 @@
 import React from 'react'
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import logo from "../assets/m4h.png"
+import TagSphere from "./TagSphere"
 import { COLORS } from '../Colors';
 import { motion } from "framer-motion/dist/framer-motion";
 
@@ -13,7 +13,7 @@ export default function Hiro() {
 
 
     return (
-        <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, justifyContent: 'space-between', height: '80vh', alignItems: 'center' }} >
+        <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, justifyContent: 'space-between', height: '80vh', alignItems: 'center', marginBottom: '20rem' }} >
             <motion.div
                 initial={{ rotate: 320, scale: 0 }}
                 animate={{ rotate: 360, scale: 1 }}
@@ -21,16 +21,16 @@ export default function Hiro() {
                     scale: 1.1,
                     transition: { duration: .5 },
                 }}
-                whileTap={{ scale: 0.9 }}
+
                 transition={{
                     type: "spring",
                     stiffness: 260,
                     damping: 20
                 }}
             >
-                <img src={logo} alt="Logo" style={{ width: '22rem' }} />
-            </motion.div>
 
+                <TagSphere />
+            </motion.div>
             <Box sx={{ width: { xs: '100%', md: '50%' } }}>
                 <Typography variant="h5" color={COLORS.white2}>Hi, I'm</Typography>
                 <Typography variant="h3" color={COLORS.white}>Mohamed Hosam</Typography>

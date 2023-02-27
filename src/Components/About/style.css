@@ -1,0 +1,52 @@
+.text-shpere {
+    position: relative;
+    /* width: 5%; */
+    /* height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e1e1e; */
+}
+
+.tagcloud {
+    /* display: inline-block; */
+    /* position: absolute;
+    top: 10%;
+    left: 0; */
+    /* width: 20%; */
+    /* font-family: 'Inter', sans-serif; */
+    font-weight: 400;
+    letter-spacing: 0.0625em;
+    font-size: 1em;
+    user-select: none;
+    text-transform: none;
+}
+
+/* Change color of each text in sphere on hover   */
+.tagcloud--item {
+    color: #00edaf;
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 200px;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    opacity: 15%;
+}
+
+@media screen and (max-width: 900px) {
+    .tagcloud {
+        font-size: .8em;
+    }
+
+    .logo {
+        top: 130px;
+        left: 85px;
+    }
+}
+
+/* .tagcloud--item:hover {
+    color: #ff6347;
+} */
