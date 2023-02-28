@@ -2,7 +2,8 @@ import Navbar from "./Navbar/Navbar"
 import About from "./About/About"
 import Experience from "./Experience/Experience"
 import Projects from "./Projects/Projects"
-import Header from "./Divider/Divider"
+import Divider from "./Divider/Divider"
+import Footer from "./Footer"
 import React from "react"
 import Container from '@mui/material/Container';
 
@@ -15,9 +16,9 @@ function App() {
       <Container fixed>
         <Navbar />
         <About />
-        <Header label="Experience" />
+        <Divider label="Experience" />
         <Experience />
-        <Header label="Projects" />
+        <Divider label="Projects" />
         <Projects />
 
         {/* <Box sx={{ bgcolor: '#4d4d4d', height: '100vh' }} />
@@ -25,6 +26,7 @@ function App() {
         <Box sx={{ bgcolor: '#4d4d4d', height: '100vh' }} />
         <Box sx={{ bgcolor: '#4d4d4d', height: '100vh' }} /> */}
       </Container>
+      <Footer />
     </>
   )
 }
