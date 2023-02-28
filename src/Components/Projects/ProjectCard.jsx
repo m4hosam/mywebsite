@@ -3,7 +3,7 @@ import Tabs, { tabsClasses } from '@mui/material/Tabs';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion"
 import Chip from '@mui/material/Chip';
 import { COLORS } from '../Colors';
 import { FaRegShareSquare } from "react-icons/fa";

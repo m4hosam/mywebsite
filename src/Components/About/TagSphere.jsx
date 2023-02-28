@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import logo from "../assets/m4h.png";
 import useMediaQuery from '@mui/material/useMediaQuery';
-import "./style.css";
+import "./sphereStyles.css";
 
 // Importing TagCloud package
 import TagCloud from "TagCloud";
@@ -11,12 +11,12 @@ const TextShpere = () => {
     const redius = !smallScreen ? 250 : 180
     // Animation settings for Text Cloud
     useEffect(() => {
-        return () => {
+        function createSphere() {
             const container = ".tagcloud";
             const texts = [
                 "HTML",
                 "CSS",
-                "SASS",
+                "SQL",
                 "JavaScript",
                 "React",
                 "MongoDB",
@@ -27,7 +27,6 @@ const TextShpere = () => {
                 "Kotlin",
                 "GIT",
                 "GITHUB",
-                "SQL",
             ];
 
             const options = {
@@ -39,8 +38,9 @@ const TextShpere = () => {
             };
 
             TagCloud(container, texts, options);
-        };
-    }, []);
+        }
+        createSphere();
+    });
 
     return (
         <>

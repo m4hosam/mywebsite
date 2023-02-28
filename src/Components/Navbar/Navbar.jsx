@@ -15,7 +15,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import logo from '../assets/logo.png';
 import resume from "../assets/resume.pdf"
 import { COLORS } from "../Colors"
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion"
 // import photo from '../Images/logo.jpg'
 
 const drawerWidth = 260;

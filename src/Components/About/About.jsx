@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import TagSphere from "./TagSphere"
 import { COLORS } from '../Colors';
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion"
 
 
 
