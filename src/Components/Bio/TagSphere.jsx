@@ -1,18 +1,16 @@
 import React, { useEffect } from "react";
+import TagCloud from "TagCloud";
 import logo from "../assets/m4h.png";
 import useMediaQuery from '@mui/material/useMediaQuery';
 import "./sphereStyles.css";
 
-// Importing TagCloud package
-import TagCloud from "TagCloud";
-
-const TextShpere = () => {
+export default function TextShpere() {
     const smallScreen = useMediaQuery("(max-width: 900px)");
     const redius = !smallScreen ? 250 : 180
     // Animation settings for Text Cloud
     useEffect(() => {
         function createSphere() {
-            const container = ".tagcloud";
+            const container = ".tagcloudContainer";
             const texts = [
                 "HTML",
                 "CSS",
@@ -39,15 +37,19 @@ const TextShpere = () => {
 
             TagCloud(container, texts, options);
         }
+        for (let item of document.querySelectorAll('.tagcloud')) {
+            item.remove();
+        }
         createSphere();
-    });
+    }, [redius]);
+
 
     return (
         <>
             <div className="text-shpere">
                 {/* span tag className must be "tagcloud"  */}
                 <img className="logo" src={logo} alt="logo" />
-                <span className="tagcloud"></span>
+                <span className="tagcloudContainer"></span>
             </div>
         </>
     );
@@ -55,4 +57,3 @@ const TextShpere = () => {
 
 
 
-export default TextShpere;

@@ -65,6 +65,7 @@ export default function ProjectCard(props) {
                     variant="scrollable"
                     scrollButtons="auto"
                     aria-label="scrollable auto tabs example"
+                    value='1'
                     sx={{
                         [`& .${tabsClasses.scrollButtons}`]: {
                             '&.Mui-disabled': { opacity: 0.3 },

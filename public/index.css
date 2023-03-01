@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 body {
     background-image: url('./Images/Background.png');
     background-size: 1600px 900px;
@@ -20,18 +16,23 @@ body {
 .icon:hover {
     scale: 1.02;
 
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-timing-function: ease-out;
     transition-delay: 0s;
     transition-property: all;
 }
 
 .icon {
     transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-timing-function: ease-out;
     transition-delay: 0s;
     transition-property: all;
+}
+
+
+#defaultCanvas0 {
+    width: 100% !important;
 }
 
 /* code {
