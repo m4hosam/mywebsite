@@ -62,9 +62,7 @@ const data = {
 export default function Projects(props) {
 
     return (
-        <Box sx={{
-            my: 5
-        }}>
+        <Box>
             <ProjectCard flexDirection="row" right data={data.card1} />
             <ProjectCard flexDirection="row-reverse" data={data.card2} />
             <ProjectCard flexDirection="row" right data={data.card3} />

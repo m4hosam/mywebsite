@@ -87,7 +87,7 @@ export default function VerticalTabs() {
     return (
         <Box
             sx={{
-                my: 20, flexGrow: 1,
+                flexGrow: 1,
                 bgcolor: COLORS.black2, display: 'flex',
                 mx: { xs: 0, md: 10 }, p: 1,
                 borderRadius: '5px',

@@ -48,7 +48,7 @@ function DrawerAppBar(props) {
                                 bgcolor: COLORS.black4,
                             }, textAlign: 'center'
                         }}>
-                            <ListItemText primary={item} />
+                            <ListItemText primary={item} href={'#' + item.toLowerCase()} />
                         </ListItemButton>
                     </ListItem>
                 ))}
@@ -89,7 +89,9 @@ function DrawerAppBar(props) {
                                 ':hover': {
                                     bgcolor: COLORS.black4,
                                 }
-                            }}>
+                            }}
+                                href={'#' + item.toLowerCase()}
+                            >
                                 {item}
                             </Button>
                         ))}

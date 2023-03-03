@@ -15,19 +15,18 @@ export default function About() {
     return (
         <Box sx={{
             display: 'flex', flexDirection: { xs: 'column', md: 'row' },
-            justifyContent: 'space-around', height: '80vh', alignItems: 'center',
-            marginBottom: '20rem'
+            justifyContent: 'space-evenly', alignItems: 'center',
+            mb: 10
         }} >
 
-            <Box sx={{ width: { xs: '100%', md: '50%' } }}>
-                <Typography variant="h5" color={COLORS.white2}>Hi, I'm</Typography>
-                <Typography variant="h3" color={COLORS.white}>Mohamed Hosam</Typography>
-                <Typography variant="h5" color={COLORS.white}>Software Engineer</Typography>
-                <Typography variant="h9" color={COLORS.white2}>I study Computer Engineering "3rd Year" at Kocaeli University in Turkey. In the Past 3 years i have made a lot of projects in Software and Web development fields. I have created 2 big projects that deal with database (SQL, MongoDB). One of them is interactive comment section the other one is bank management system. You can see my projects in the project section.</Typography>
-                {/* <h1 className="text-xl text-gray-400">Hi, I'm</h1>
-                        <h1 className="text-2xl font-bold text-white">Mohamed Hosam</h1>
-                        <p class="text-xl font-bold text-gray-300">Software Engineer</p>
-                        <p className="text-md font-light text-gray-400 ">I study Computer Engineering "3rd Year" at Kocaeli University in Turkey. In the Past 3 years i have made a lot of projects in Software and Web development fields. I have created 2 big projects that deal with database (SQL, MongoDB). One of them is interactive comment section the other one is bank management system. You can see my projects in the project section.</p> */}
+            <Box sx={{ width: { xs: '90%', md: '40%' } }}>
+                <Typography sx={{ fontSize: '18px' }} color={COLORS.white2}>Hi, My name is Mohamed Hosam. I study Computer Engineering "3rd Year" at Kocaeli University in Turkey.
+                    I am an experienced MERN Full-Stack Developer with a passion for tackling complex challenges in desktop, Android, and web applications.
+                </Typography>
+                <Typography sx={{ fontSize: '18px', mb: { xs: 10, md: 0 } }} color={COLORS.white2}>Over the past 2 years, I have honed my skills and expertise in developing a range of software, from all different websites to mobile apps.
+                    I take great pride in breaking down complex problems into smaller, more manageable pieces, and working my way up to finding the right solutions.
+                    My experience has given me exposure to several technologies, including SQL, MongoDB, .Net, Node.js, React, HTTP requests, and web scraping.
+                    My personal projects have also allowed me to grow to become an expert in problem-solving and algorithmic thinking.</Typography>
             </Box>
 
 

@@ -30,7 +30,7 @@ export default function ProjectCard(props) {
     return (
         <Box sx={{
             display: 'flex', flexDirection: { xs: 'column', md: props.flexDirection },
-            p: 1, my: 10, justifyContent: 'center'
+            p: 1, mb: 10, justifyContent: 'center'
         }}>
             {/* Text Card Details Section */}
             <Box sx={{

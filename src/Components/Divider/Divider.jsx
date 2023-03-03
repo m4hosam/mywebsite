@@ -10,7 +10,7 @@ import Divider from '@mui/material/Divider';
 export default function Header(props) {
 
     return (
-        <Box sx={{ my: 10, maxWidth: '80%', margin: '10rem auto' }} >
+        <Box id={props.id} sx={{ maxWidth: '80%', margin: '4rem auto', mt: 30 }} >
             <Divider
                 sx={{
                     "&::before, &::after": {

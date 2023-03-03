@@ -17,11 +17,11 @@ function App() {
       <Container fixed>
         <Navbar />
         <Bio />
-        <Divider label="About Me" />
+        <Divider id="about" label="About Me" />
         <About />
-        <Divider label="Experience" />
+        <Divider id="experience" label="Experience" />
         <Experience />
-        <Divider label="Projects" />
+        <Divider id="projects" label="Projects" />
         <Projects />
 
         {/* <Box sx={{ bgcolor: '#4d4d4d', height: '100vh' }} />
