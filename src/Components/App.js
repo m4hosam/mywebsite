@@ -7,6 +7,7 @@ import About from "./About/About"
 import Footer from "./Footer"
 import React from "react"
 import Container from '@mui/material/Container';
+import { motion } from "framer-motion"
 
 
 function App() {
@@ -17,17 +18,37 @@ function App() {
       <Container fixed>
         <Navbar />
         <Bio />
-        <Divider id="about" label="About Me" />
-        <About />
-        <Divider id="experience" label="Experience" />
-        <Experience />
-        <Divider id="projects" label="Projects" />
-        <Projects />
 
-        {/* <Box sx={{ bgcolor: '#4d4d4d', height: '100vh' }} />
-        <Box sx={{ bgcolor: '#4d4d4d', height: '100vh' }} />
-        <Box sx={{ bgcolor: '#4d4d4d', height: '100vh' }} />
-        <Box sx={{ bgcolor: '#4d4d4d', height: '100vh' }} /> */}
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <Divider id="about" label="About Me" />
+          <About />
+        </motion.div>
+
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <Divider id="experience" label="Experience" />
+          <Experience />
+        </motion.div>
+
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <Divider id="projects" label="Projects" />
+          <Projects />
+        </motion.div>
+
       </Container>
       <Footer />
     </>

@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard.jsx"
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import img1 from '../assets/webScrap.png'
-import img2 from '../assets/interactiveCommentSection1.png'
+import img2 from '../assets/interactiveCommentSection.png'
 import img3 from '../assets/bankMangementSystem.png'
 import img4 from '../assets/HarryPotter.png'
 
