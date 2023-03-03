@@ -30,11 +30,12 @@ export default function ProjectCard(props) {
     return (
         <Box sx={{
             display: 'flex', flexDirection: { xs: 'column', md: props.flexDirection },
-            p: 1, mb: 10, justifyContent: 'center'
+            mb: 10, justifyContent: 'center', maxWidth: { xs: '95%', md: '100%' },
+            alignItems: 'center'
         }}>
             {/* Text Card Details Section */}
             <Box sx={{
-                bgcolor: COLORS.black2, width: { xs: '85%', md: '50%' },
+                bgcolor: COLORS.black2, width: { xs: '81%', md: '50%' },
                 mx: { xs: 0, md: 5 }, px: 4, pt: 4, pb: 2, borderRadius: '10px',
                 position: 'relative'
             }}>
