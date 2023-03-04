@@ -1,20 +1,19 @@
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 import Navbar from "./Navbar/Navbar"
 import Bio from "./Bio/Bio"
 import Experience from "./Experience/Experience"
 import Projects from "./Projects/Projects"
-import Divider from "./Divider/Divider"
+import Divider from "./Header"
 import About from "./About/About"
 import Footer from "./Footer"
 import React from "react"
-import Container from '@mui/material/Container';
 import { motion } from "framer-motion"
 
 
 function App() {
   return (
     <>
-      {/* <div style={{ position: 'fixed', width: '3rem', height: '40vh', backgroundColor: '	#3c3c3c' }}></div> */}
-      {/* The content of my CV will be listed below */}
       <Container fixed>
         <Navbar />
         <Bio />
@@ -25,8 +24,10 @@ function App() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <Divider id="about" label="About Me" />
-          <About />
+          <Box id="about" sx={{ pt: 1 }}>
+            <Divider label="About Me" />
+            <About />
+          </Box>
         </motion.div>
 
         <motion.div
@@ -35,9 +36,12 @@ function App() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <Divider id="experience" label="Experience" />
-          <Experience />
+          <Box id="experience" sx={{ pt: 1, mb: 10 }}>
+            <Divider label="Experience" />
+            <Experience />
+          </Box>
         </motion.div>
+
 
         <motion.div
           initial={{ y: 50, opacity: 0 }}
@@ -45,7 +49,6 @@ function App() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <Divider id="projects" label="Projects" />
           <Projects />
         </motion.div>
 

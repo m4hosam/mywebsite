@@ -5,7 +5,6 @@ import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { motion } from "framer-motion"
 import Chip from '@mui/material/Chip';
-import { COLORS } from '../Colors';
 import { FaRegShareSquare } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import './styles.css'
@@ -13,8 +12,8 @@ import './styles.css'
 function Skill(props) {
     return (
         <Chip label={props.label} sx={{
-            color: COLORS.white,
-            bgcolor: COLORS.black5, mr: 1
+            color: "var(--white1)",
+            bgcolor: "var(--black5)", mr: 1
         }} />
 
     )
@@ -35,7 +34,7 @@ export default function ProjectCard(props) {
         }}>
             {/* Text Card Details Section */}
             <Box sx={{
-                bgcolor: COLORS.black2, width: { xs: '81%', md: '50%' },
+                bgcolor: "var(--black2)", width: { xs: '81%', md: '50%' },
                 mx: { xs: 0, md: 5 }, px: 4, pt: 4, pb: 2, borderRadius: '10px',
                 position: 'relative'
             }}>
@@ -46,8 +45,8 @@ export default function ProjectCard(props) {
                     </a>
                     : null}
 
-                <Typography variant="h7" color={COLORS.white2}>{props.data.projectType}</Typography>
-                <Typography variant="h5" color={COLORS.white}>{props.data.title}</Typography>
+                <Typography variant="h7" color="var(--white2)">{props.data.projectType}</Typography>
+                <Typography variant="h5" color="var(--white1)">{props.data.title}</Typography>
                 <a href={props.data.preview}>
                     <FaRegShareSquare className='icon' color='white' style={{ fontSize: '20px', position: 'absolute', right: 40, top: 35 }} />
                 </a>
@@ -55,7 +54,7 @@ export default function ProjectCard(props) {
                     <AiFillGithub className='icon' color='white' style={{ fontSize: '20px', position: 'absolute', right: 80, top: 35 }} />
                 </a>
                 <Box sx={{ my: 5 }}>
-                    <ul style={{ color: COLORS.white2, listStyleType: 'square' }}>
+                    <ul style={{ color: "var(--white3)", listStyleType: 'square' }}>
                         {props.data.description.map((item, index) =>
                             <li key={index}>{item}</li>
                         )}

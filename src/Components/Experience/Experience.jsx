@@ -7,7 +7,6 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { motion } from "framer-motion"
-import { COLORS } from '../Colors';
 import { FaRegShareSquare } from "react-icons/fa";
 
 
@@ -88,7 +87,7 @@ export default function VerticalTabs() {
         <Box
             sx={{
                 flexGrow: 1,
-                bgcolor: COLORS.black2, display: 'flex',
+                bgcolor: "var(--black2)", display: 'flex',
                 mx: { xs: 0, md: 10 }, p: 1,
                 borderRadius: '5px',
                 flexDirection: { xs: 'column', md: 'row' }, minHeight: '22rem'
@@ -103,7 +102,7 @@ export default function VerticalTabs() {
                 aria-label="Vertical tabs example"
                 TabIndicatorProps={{ style: { background: "#fff" } }}
                 sx={{
-                    borderRight: 1, borderColor: COLORS.black3, '.MuiTabs-indicator': {
+                    borderRight: 1, borderColor: "var(--black3)", '.MuiTabs-indicator': {
                         left: 0
                     },
                     [`& .${tabsClasses.scrollButtons}`]: {
@@ -120,15 +119,15 @@ export default function VerticalTabs() {
 
 
             <TabPanel value={value} index={0} sx={{ maxWidth: { xs: '100', md: '80%' } }}>
-                <Typography variant="h8" color={COLORS.white2}>Jun. 2022 ‑ Nov. 2022</Typography>
+                <Typography variant="h8" color="var(--white2)">Jun. 2022 ‑ Nov. 2022</Typography>
                 <Box sx={{ display: 'flex', felxDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <Typography variant="h6" color={COLORS.white}>FULL STACK DEVELOPER</Typography>
+                    <Typography variant="h6" color="var(--white1)">FULL STACK DEVELOPER</Typography>
                     <a href='https://webscrapingcimri.netlify.app/'>
                         <FaRegShareSquare className='icon' color='white' style={{ fontSize: '20px', marginLeft: '20%' }} />
                     </a>
                 </Box>
                 <Box sx={{ my: 3 }}>
-                    <ul style={{ color: COLORS.white2, listStyleType: 'square' }}>
+                    <ul style={{ color: "var(--white3)", listStyleType: 'square' }}>
                         <li> Worked on 'Yemek Bursu Website' and was responsible of student application form and its security. We used ASP.Net
                             MVC framework to develop the whole website.</li>
                         <li>Implemented a dynamic search engine to search on any laptop or specific seller.</li>
@@ -143,15 +142,15 @@ export default function VerticalTabs() {
 
 
             <TabPanel value={value} index={1} sx={{ position: 'relative', maxWidth: { xs: '100', md: '80%' } }}>
-                <Typography variant="h8" color={COLORS.white2}>Jun. 2020 ‑ Oct. 2020</Typography>
+                <Typography variant="h8" color="var(--white2)">Jun. 2020 ‑ Oct. 2020</Typography>
                 <Box sx={{ display: 'flex', felxDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <Typography variant="h6" color={COLORS.white}>Motion Graphic Designer</Typography>
+                    <Typography variant="h6" color="var(--white1)">Motion Graphic Designer</Typography>
                     <a href='https://vimeo.com/mhosam'>
                         <FaRegShareSquare className='icon' color='white' style={{ fontSize: '20px', marginLeft: '20%' }} />
                     </a>
                 </Box>
                 <Box sx={{ my: 3 }}>
-                    <ul style={{ color: COLORS.white2, listStyleType: 'square' }}>
+                    <ul style={{ color: "var(--white3)", listStyleType: 'square' }}>
                         <li>Worked on some logo animation videos with Adobe After Effects Tool for some freelance jobs.</li>
                         <li>Worked on some video Editing and motion graphics projects that are listed in my vimeo page.</li>
 

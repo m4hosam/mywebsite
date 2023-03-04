@@ -13,7 +13,7 @@
 
 /* Change color of each text in sphere on hover   */
 .tagcloud--item {
-    color: #00edaf;
+    color: var(--green2);
     text-transform: uppercase;
 }
 

@@ -1,6 +1,7 @@
 import ProjectCard from "./ProjectCard.jsx"
 import * as React from 'react';
 import Box from '@mui/material/Box';
+import Header from "../Header"
 import img1 from '../assets/webScrap.png'
 import img2 from '../assets/interactiveCommentSection.png'
 import img3 from '../assets/bankMangementSystem.png'
@@ -62,7 +63,8 @@ const data = {
 export default function Projects(props) {
 
     return (
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+        <Box id="projects" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+            <Header label="Projects" />
             <ProjectCard flexDirection="row" right data={data.card1} />
             <ProjectCard flexDirection="row-reverse" data={data.card2} />
             <ProjectCard flexDirection="row" right data={data.card3} />

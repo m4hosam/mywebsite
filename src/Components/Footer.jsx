@@ -1,7 +1,6 @@
 import React from 'react'
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { COLORS } from './Colors';
 import Divider from '@mui/material/Divider';
 import { AiFillGithub } from "react-icons/ai";
 import { FiLinkedin } from "react-icons/fi";
@@ -14,13 +13,13 @@ import Stack from '@mui/material/Stack';
 export default function Header(props) {
 
     return (
-        <Box sx={{
+        <Box id="contact" sx={{
             my: 5, display: 'flex', height: '7rem',
             justifyContent: 'space-between', alignItems: 'center',
             flexDirection: 'column'
         }} >
             <Divider
-                color={COLORS.black4}
+                color="#3c3c3c"
                 sx={{
                     width: '70%'
                 }}
@@ -39,7 +38,7 @@ export default function Header(props) {
                     <FiMail className='icon' color='white' style={{ fontSize: '20px' }} />
                 </a>
             </Stack>
-            <Typography variant="h8" sx={{ mx: 2 }} color={COLORS.white2}>Designed & Built by Mohamed Hosam</Typography>
+            <Typography variant="h8" sx={{ mx: 2 }} color="var(--white3)">Designed & Built by Mohamed Hosam</Typography>
         </Box >
 
     )

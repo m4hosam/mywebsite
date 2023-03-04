@@ -1,7 +1,6 @@
 import React from 'react'
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { COLORS } from '../Colors';
 import Divider from '@mui/material/Divider';
 
 
@@ -10,15 +9,15 @@ import Divider from '@mui/material/Divider';
 export default function Header(props) {
 
     return (
-        <Box id={props.id} sx={{ maxWidth: '80%', margin: '4rem auto', mt: 30 }} >
+        <Box id={props.id} sx={{ minWidth: '80%', maxWidth: '80%', margin: '4rem auto', mt: 15 }} >
             <Divider
                 sx={{
                     "&::before, &::after": {
-                        borderColor: COLORS.black3,
+                        borderColor: "var(--black3)",
                     },
                 }}
             >
-                <Typography variant="h5" sx={{ mx: 2 }} color={COLORS.white2}>{props.label}</Typography>
+                <Typography variant="h5" sx={{ mx: 2 }} color="var(--green2)">{props.label}</Typography>
             </Divider>
         </Box>
 

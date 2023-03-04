@@ -7,14 +7,12 @@ import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import logo from '../assets/logo.png';
 import resume from "../assets/resume.pdf"
-import { COLORS } from "../Colors"
 import { motion } from "framer-motion"
 // import photo from '../Images/logo.jpg'
 
@@ -35,7 +33,7 @@ function DrawerAppBar(props) {
     };
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', color: COLORS.white }}>
+        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', color: "var(--white1)" }}>
 
             <List sx={{ mt: 10 }}>
                 {navItems.map((item) => (
@@ -43,12 +41,23 @@ function DrawerAppBar(props) {
                         <ListItemButton sx={{
                             borderRadius: '7px',
                             margin: '1rem',
-                            color: COLORS.white, backgroundColor: COLORS.black3,
-                            ':hover': {
-                                bgcolor: COLORS.black4,
-                            }, textAlign: 'center'
+                            alignItems: 'center', justifyContent: 'center'
                         }}>
-                            <ListItemText primary={item} href={'#' + item.toLowerCase()} />
+                            <Button key={item} sx={{
+                                width: 'inherit',
+                                px: 8,
+                                textTransform: 'none',
+                                fontSize: '16px',
+                                color: "var(--white1)", backgroundColor: "var(--black3)",
+                                ':hover': {
+                                    bgcolor: "var(--black4)",
+                                }
+                            }}
+                                href={'#' + item.toLowerCase()}
+                            >
+                                {item}
+                            </Button>
+                            {/* <ListItemText primary={item} href={'#' + item.toLowerCase()} /> */}
                         </ListItemButton>
                     </ListItem>
                 ))}
@@ -60,9 +69,9 @@ function DrawerAppBar(props) {
                 px: 10,
                 mt: 10,
                 textTransform: 'none',
-                color: COLORS.white, backgroundColor: COLORS.goldenDark,
+                color: "var(--white1)", backgroundColor: "var(--green3)",
                 ':hover': {
-                    bgcolor: COLORS.golden,
+                    bgcolor: "var(--green2)",
                 }
             }}>
                 Resume
@@ -74,7 +83,7 @@ function DrawerAppBar(props) {
 
     return (
         <Box sx={{ display: 'flex' }}>
-            <AppBar component="nav" sx={{ backgroundColor: COLORS.black1 }}>
+            <AppBar component="nav" sx={{ backgroundColor: "var(--black1)" }}>
                 <Toolbar sx={{ justifyContent: 'space-between', mx: { xs: 0, sm: 3 } }}>
                     <img style={{ width: 70 }} src={logo} alt="logo" />
 
@@ -85,9 +94,9 @@ function DrawerAppBar(props) {
                                 textTransform: 'none',
                                 marginRight: '1rem',
                                 fontSize: '15px',
-                                color: COLORS.white, backgroundColor: COLORS.black1,
+                                color: "var(--white1)", backgroundColor: "var(--black1)",
                                 ':hover': {
-                                    bgcolor: COLORS.black4,
+                                    bgcolor: "var(--black4)",
                                 }
                             }}
                                 href={'#' + item.toLowerCase()}
@@ -100,9 +109,10 @@ function DrawerAppBar(props) {
                         px: 2,
                         display: { xs: 'none', sm: 'block' },
                         textTransform: 'none',
-                        color: COLORS.white, backgroundColor: COLORS.goldenDark,
+                        color: "white", backgroundColor: "var(--green3)",
                         ':hover': {
-                            bgcolor: COLORS.golden,
+                            bgcolor: "var(--green2)",
+                            color: "var(--black3)"
                         }
                     }}>
                         Resume
@@ -140,7 +150,7 @@ function DrawerAppBar(props) {
                 <Drawer
                     PaperProps={{
                         sx: {
-                            backgroundColor: COLORS.black3
+                            backgroundColor: "var(--black3)"
                         }
                     }}
                     container={container}
