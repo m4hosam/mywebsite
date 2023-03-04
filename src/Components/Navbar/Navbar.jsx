@@ -85,7 +85,9 @@ function DrawerAppBar(props) {
         <Box sx={{ display: 'flex' }}>
             <AppBar component="nav" sx={{ backgroundColor: "var(--black1)" }}>
                 <Toolbar sx={{ justifyContent: 'space-between', mx: { xs: 0, sm: 3 } }}>
-                    <img style={{ width: 70 }} src={logo} alt="logo" />
+                    <a href='/'>
+                        <img style={{ width: 70 }} src={logo} alt="logo" />
+                    </a>
 
                     <Box sx={{ display: { xs: 'none', md: 'block' }, mr: 5 }}>
                         {navItems.map((item) => (
