@@ -7,7 +7,7 @@ import personalImg from '../assets/photoID.png'
 
 function Span(props) {
     return (
-        <span style={{ fontSize: '18px', color: "var(--green3)" }}>
+        <span style={{ fontSize: '17px', color: "var(--green3)" }}>
             {props.text}
         </span>
 
@@ -27,13 +27,27 @@ export default function About() {
         }} >
 
             <Box sx={{ width: { xs: '90%', md: '40%' } }}>
-                <Typography sx={{ fontSize: '18px', mb: 1 }} color="var(--white3)">Hi, My name is Mohamed Hosam. I study Computer Engineering "3rd Year" at Kocaeli University in Turkey.
-                    I am an experienced MERN Full-Stack Developer with a passion for tackling complex challenges in <Span text="desktop" />, <Span text="Android" />,and <Span text="web applications" />.
+                <Typography sx={{ fontFamily: 'inherit', fontSize: '17px', mb: 1 }} color="var(--white3)">
+                    Hi, I'm Mohamed Hosam, a passionate Software Engineer with a
+                    focus on Python and Javascript development. Currently,
+                    I am leveraging the power of AI with tools like ChatGPT
+                    and Github Copilot to code at lightning speed.
                 </Typography>
-                <Typography sx={{ fontSize: '18px', mb: 1 }} color="var(--white3)">Over the past 2 years, I have honed my skills and expertise in developing a range of software, from all different websites to mobile apps.
-                    I take great pride in breaking down complex problems into smaller, more manageable pieces, and working my way up to finding the right solutions.</Typography>
-                <Typography sx={{ fontSize: '18px', mb: { xs: 10, md: 0 } }} color="var(--white3)">My experience has given me exposure to several technologies, including <Span text="SQL" /> , <Span text="MongoDB" />, <Span text=".Net" />, <Span text="Node.js" />, <Span text="React" />,<Span text="HTTP requests" /> , and <Span text="web scraping" />.
-                    My personal projects have also allowed me to grow to become an expert in problem-solving and algorithmic thinking.</Typography>
+                <Typography sx={{ fontFamily: 'inherit', fontSize: '17px', mb: 1 }} color="var(--white3)">
+                    My diverse experience has exposed me to a wide array of technologies,
+                    ranging from <Span text="NextJS" /> , <Span text="TypeScript" />,
+                    <Span text="React" />, <Span text="Node.js" /> ,<Span text="SQL" /> ,<Span text="MongoDB" /> ,
+                    <Span text="TailwindCSS" />, to <Span text="Machine Learning" />. Through my personal projects,
+                    I have gained my expertise in problem-solving and algorithmic thinking.
+                </Typography>
+
+                <Typography sx={{ fontFamily: 'inherit', fontSize: '17px', mb: 1 }} color="var(--white3)">
+                    Over the past 2 years, I have honed my skills and expertise in
+                    developing a range of software, from all different websites to mobile apps.
+                    I take great pride in breaking down complex problems into smaller,
+                    more manageable pieces, and working my way up to finding the right solutions.
+                </Typography>
+
             </Box>
 
 

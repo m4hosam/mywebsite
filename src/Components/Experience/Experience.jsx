@@ -16,6 +16,7 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
         textTransform: 'none',
         fontWeight: theme.typography.fontWeightRegular,
         fontSize: theme.typography.pxToRem(15),
+        fontFamily: 'inherit',
         marginRight: theme.spacing(2),
         color: 'rgba(255, 255, 255, 0.7)',
         '&.Mui-selected': {
@@ -113,16 +114,65 @@ export default function VerticalTabs() {
                     },
                 }}
             >
-                <StyledTab label="Kocaeli University" {...a11yProps(0)} />
-                <StyledTab label="Freelance" {...a11yProps(1)} />
+                {/* <StyledTab label="Freelance" {...a11yProps(0)} /> */}
+                <StyledTab label="MetalMaker 3D" {...a11yProps(0)} />
+                <StyledTab label="Kocaeli University" {...a11yProps(1)} />
+                {/* <StyledTab label="Freelance" {...a11yProps(3)} /> */}
             </Tabs>
 
 
+            {/* <TabPanel value={value} index={0} sx={{ maxWidth: { xs: '100', md: '80%' } }}>
+                <Typography variant="h8" color="var(--white2)">Oct. 2023 ‑ Current</Typography>
+                <Box sx={{ display: 'flex', felxDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <Typography sx={{ fontFamily: 'inherit' }} variant="h6" color="var(--white1)">NextJS DEVELOPER</Typography>
+                    <a href='https://webscrapingcimri.netlify.app/'>
+                        <FaRegShareSquare className='icon' color='white' style={{ fontSize: '20px', marginLeft: '20%' }} />
+                    </a>
+                </Box>
+                <Box sx={{ my: 3 }}>
+                    <ul style={{ color: "var(--white3)", listStyleType: 'square' }}>
+                        <li>Freelancer</li>
+
+                    </ul>
+                </Box>
+            </TabPanel> */}
             <TabPanel value={value} index={0} sx={{ maxWidth: { xs: '100', md: '80%' } }}>
+                <Typography variant="h8" color="var(--white2)">Jul. 2023 ‑ Seb. 2023</Typography>
+                <Box sx={{ display: 'flex', felxDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <Typography sx={{ fontFamily: 'inherit' }} variant="h6" color="var(--white1)">Software Engineer Erasmus Intern</Typography>
+                    <a href='https://metalmaker3d.com/'>
+                        <FaRegShareSquare className='icon' color='white' style={{ fontSize: '20px', marginLeft: '20%' }} />
+                    </a>
+                </Box>
+                <Box sx={{ my: 3 }}>
+                    <ul style={{ color: "var(--white3)", listStyleType: 'square' }}>
+                        <li>Spearheaded a Python software development role at MetalMaker3D ,
+                            leading a team in the creation of a plugin for
+                            UltiMaker Cura 3D printing software. The plugin’s primary function was to automatically
+                            generate sprues, cone‑like structures attached to 3D shapes,
+                            facilitating the casting of printed 3D parts. This innovation streamlined the metal
+                            casting process in 3D printing.
+                        </li>
+                        <li>As the team leader, organized the project by breaking it down into
+                            manageable tasks, ensuring each team member had a well‑defined role and
+                            responsibility. Leveraged Agile Methodology and GitHub for task management,
+                            fostering collaboration and transparency among team members.
+                        </li>
+                        <li>Contributed to advancing the company’s mission to enhance 3D printing
+                            capabilities and metal casting processes, ultimately delivering a
+                            valuable tool for the UltiMaker Cura 3D printing software that improved
+                            efficiency and user experience in 3D part production.</li>
+
+                    </ul>
+                </Box>
+            </TabPanel>
+
+
+            <TabPanel value={value} index={1} sx={{ maxWidth: { xs: '100', md: '80%' } }}>
                 <Typography variant="h8" color="var(--white2)">Jun. 2022 ‑ Nov. 2022</Typography>
                 <Box sx={{ display: 'flex', felxDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                     <Typography variant="h6" color="var(--white1)">FULL STACK DEVELOPER</Typography>
-                    <a href='https://webscrapingcimri.netlify.app/'>
+                    <a href='https://yemekbursubasvuru.kocaeli.edu.tr/'>
                         <FaRegShareSquare className='icon' color='white' style={{ fontSize: '20px', marginLeft: '20%' }} />
                     </a>
                 </Box>
@@ -139,12 +189,10 @@ export default function VerticalTabs() {
                     </ul>
                 </Box>
             </TabPanel>
-
-
-            <TabPanel value={value} index={1} sx={{ position: 'relative', maxWidth: { xs: '100', md: '80%' } }}>
+            {/* <TabPanel value={value} index={3} sx={{ position: 'relative', maxWidth: { xs: '100', md: '80%' } }}>
                 <Typography variant="h8" color="var(--white2)">Jun. 2020 ‑ Oct. 2020</Typography>
                 <Box sx={{ display: 'flex', felxDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <Typography variant="h6" color="var(--white1)">Motion Graphic Designer</Typography>
+                    <Typography sx={{ fontFamily: 'inherit' }} variant="h6" color="var(--white1)">Motion Graphic Designer</Typography>
                     <a href='https://vimeo.com/mhosam'>
                         <FaRegShareSquare className='icon' color='white' style={{ fontSize: '20px', marginLeft: '20%' }} />
                     </a>
@@ -156,7 +204,7 @@ export default function VerticalTabs() {
 
                     </ul>
                 </Box>
-            </TabPanel>
+            </TabPanel> */}
         </Box >
     );
 }
