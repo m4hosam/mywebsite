@@ -14,17 +14,19 @@ export default function TextShpere() {
             const texts = [
                 "HTML",
                 "CSS",
-                "SQL",
                 "JavaScript",
-                "React",
+                "SQL",
                 "MongoDB",
+                "React",
+                "NextJS",
                 "Express",
                 "NodeJS",
-                "MVC.NET",
+                "Prisma",
+                "Flask",
                 "Python",
-                "Kotlin",
+                "Linux",
                 "GIT",
-                "GITHUB",
+                "Agile",
             ];
 
             const options = {

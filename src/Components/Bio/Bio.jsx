@@ -32,6 +32,9 @@ function Header(props) {
 
 
 export default function Bio() {
+    const bio = `Experienced Full-Stack Developer with over 3 years
+                of hands-on project experience in developing Desktop, Android and Web apps.
+                Passionate about problem-solving and algorithmic challenges.`
 
 
     return (
@@ -59,11 +62,9 @@ export default function Bio() {
             </motion.div>
             <Box sx={{ width: { xs: '90%', md: '40%' }, mt: { xs: 7, md: 0 } }} >
                 <Typography variant="h5" color="var(--green3)">Hi, I'm</Typography>
-                {/* <Header2 text="Hi, I'm" /> */}
-                {/* <Typography variant="h4" color="var(--white1)">Mohamed Hosam</Typography> */}
                 <Header text="Mohamed Hosam" />
-                <Typography variant="h5" color="var(--green1)">I create systems and applications</Typography>
-                <Typography variant="h8" color="var(--white3)">Experienced Full-Stack Developer with over 2 years of hands-on experience in developing desktop apps, Android apps, and websites. Passionate about problem-solving and algorithmic challenges.</Typography>
+                <Typography sx={{ marginBottom: '1rem', fontSize: { xs: "18px", lg: '21px' } }} variant="h5" color="var(--green1)">I create NextJS applications</Typography>
+                <Typography variant="h8" color="var(--white3)">{bio}</Typography>
             </Box>
 
         </Box >

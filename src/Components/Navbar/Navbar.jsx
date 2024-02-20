@@ -109,6 +109,7 @@ function DrawerAppBar(props) {
                     </Box>
                     <Button href={resume} variant="contained" sx={{
                         px: 2,
+                        fontFamily: 'inherit',
                         display: { xs: 'none', sm: 'block' },
                         textTransform: 'none',
                         color: "white", backgroundColor: "var(--green3)",

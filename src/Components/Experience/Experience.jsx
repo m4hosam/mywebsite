@@ -114,29 +114,41 @@ export default function VerticalTabs() {
                     },
                 }}
             >
-                {/* <StyledTab label="Freelance" {...a11yProps(0)} /> */}
-                <StyledTab label="MetalMaker 3D" {...a11yProps(0)} />
-                <StyledTab label="Kocaeli University" {...a11yProps(1)} />
+                <StyledTab label="Freelance" {...a11yProps(0)} />
+                <StyledTab label="MetalMaker 3D" {...a11yProps(1)} />
+                <StyledTab label="Kocaeli University" {...a11yProps(2)} />
                 {/* <StyledTab label="Freelance" {...a11yProps(3)} /> */}
             </Tabs>
 
 
-            {/* <TabPanel value={value} index={0} sx={{ maxWidth: { xs: '100', md: '80%' } }}>
-                <Typography variant="h8" color="var(--white2)">Oct. 2023 ‑ Current</Typography>
+            <TabPanel value={value} index={0} sx={{ maxWidth: { xs: '100', md: '80%' } }}>
                 <Box sx={{ display: 'flex', felxDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <Typography sx={{ fontFamily: 'inherit' }} variant="h6" color="var(--white1)">NextJS DEVELOPER</Typography>
-                    <a href='https://webscrapingcimri.netlify.app/'>
-                        <FaRegShareSquare className='icon' color='white' style={{ fontSize: '20px', marginLeft: '20%' }} />
-                    </a>
+                    <Typography variant="h8" color="var(--white2)">Jul. 2023 ‑ Present</Typography>
+                    <Box sx={{ display: 'flex', felxDirection: 'row', gap: 2 }}>
+                        <a href='https://ecommerce-admin-m4hosam.vercel.app/'>
+                            <FaRegShareSquare className='icon' color='white' style={{ fontSize: '20px', marginLeft: '20%' }} />
+                        </a>
+                        <a href='https://lighting-planner.vercel.app/'>
+                            <FaRegShareSquare className='icon' color='white' style={{ fontSize: '20px', marginLeft: '20%' }} />
+                        </a>
+                    </Box>
                 </Box>
+                <Typography sx={{ fontFamily: 'inherit' }} variant="h6" color="var(--white1)">NextJS Full Stack Developer</Typography>
                 <Box sx={{ my: 3 }}>
                     <ul style={{ color: "var(--white3)", listStyleType: 'square' }}>
-                        <li>Freelancer</li>
+                        <li>Collaborated directly with clients to gather requirements and translate them
+                            into system specifications, ensuring alignment with project goals and objectives.
+                        </li>
+                        <li>Developed a high‑performance e‑commerce website from scratch using Next.js.
+                            Implemented an intuitive admin dashboard for efficient order management and comprehensive sales reporting.
+                        </li>
+                        <li>Created an Intelligent Lighting Distribution Planner that automates lighting distribution based on room dimensions, ensur‑
+                            ing rapid response and enhanced user experience</li>
 
                     </ul>
                 </Box>
-            </TabPanel> */}
-            <TabPanel value={value} index={0} sx={{ maxWidth: { xs: '100', md: '80%' } }}>
+            </TabPanel>
+            <TabPanel value={value} index={1} sx={{ maxWidth: { xs: '100', md: '80%' } }}>
                 <Typography variant="h8" color="var(--white2)">Jul. 2023 ‑ Seb. 2023</Typography>
                 <Box sx={{ display: 'flex', felxDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                     <Typography sx={{ fontFamily: 'inherit' }} variant="h6" color="var(--white1)">Software Engineer Erasmus Intern</Typography>
@@ -146,29 +158,22 @@ export default function VerticalTabs() {
                 </Box>
                 <Box sx={{ my: 3 }}>
                     <ul style={{ color: "var(--white3)", listStyleType: 'square' }}>
-                        <li>Spearheaded a Python software development role at MetalMaker3D ,
-                            leading a team in the creation of a plugin for
-                            UltiMaker Cura 3D printing software. The plugin’s primary function was to automatically
-                            generate sprues, cone‑like structures attached to 3D shapes,
-                            facilitating the casting of printed 3D parts. This innovation streamlined the metal
-                            casting process in 3D printing.
+                        <li>Led a team of interns at in developing a plugin for UltiMaker Cura 3D printing software, automating sprue generation for
+                            metal parts, drastically reducing design time from 3‑5 hours to less than 5 minutes.
                         </li>
-                        <li>As the team leader, organized the project by breaking it down into
-                            manageable tasks, ensuring each team member had a well‑defined role and
-                            responsibility. Leveraged Agile Methodology and GitHub for task management,
-                            fostering collaboration and transparency among team members.
+                        <li>Organized the project by breaking it down into manageable tasks, ensuring each team member had a well‑defined role and
+                            responsibility. Leveraged Agile Methodology and GitHub for task management, fostering collaboration and transparency
+                            among team members.
                         </li>
-                        <li>Contributed to advancing the company’s mission to enhance 3D printing
-                            capabilities and metal casting processes, ultimately delivering a
-                            valuable tool for the UltiMaker Cura 3D printing software that improved
-                            efficiency and user experience in 3D part production.</li>
+                        <li>Contributed to the company’s goal of enhancing 3D printing capabilities, delivering a valuable tool for UltiMaker Cura 3D
+                            software, significantly improving efficiency and user experience in part production</li>
 
                     </ul>
                 </Box>
             </TabPanel>
 
 
-            <TabPanel value={value} index={1} sx={{ maxWidth: { xs: '100', md: '80%' } }}>
+            <TabPanel value={value} index={2} sx={{ maxWidth: { xs: '100', md: '80%' } }}>
                 <Typography variant="h8" color="var(--white2)">Jun. 2022 ‑ Nov. 2022</Typography>
                 <Box sx={{ display: 'flex', felxDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                     <Typography variant="h6" color="var(--white1)">FULL STACK DEVELOPER</Typography>

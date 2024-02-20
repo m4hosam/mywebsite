@@ -46,12 +46,12 @@ export default function ProjectCard(props) {
                     : null}
 
                 <Typography variant="h7" color="var(--white2)">{props.data.projectType}</Typography>
-                <Typography variant="h5" color="var(--white1)">{props.data.title}</Typography>
+                <Typography sx={{ fontSize: { xs: "19px", lg: '21px' } }} variant="h5" color="var(--white1)">{props.data.title}</Typography>
                 <a href={props.data.preview}>
-                    <FaRegShareSquare className='icon' color='white' style={{ fontSize: '20px', position: 'absolute', right: 40, top: 35 }} />
+                    <FaRegShareSquare className='icon' color='white' style={{ fontSize: '20px', position: 'absolute', right: 40, top: 32 }} />
                 </a>
                 <a href={props.data.github}>
-                    <AiFillGithub className='icon' color='white' style={{ fontSize: '20px', position: 'absolute', right: 80, top: 35 }} />
+                    <AiFillGithub className='icon' color='white' style={{ fontSize: '20px', position: 'absolute', right: 80, top: 32 }} />
                 </a>
                 <Box sx={{ my: 5 }}>
                     <ul style={{ color: "var(--white3)", listStyleType: 'square' }}>
