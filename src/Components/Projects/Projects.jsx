@@ -3,7 +3,8 @@ import Box from '@mui/material/Box';
 import Header from "../Header";
 import ProjectCard from "./ProjectCard.jsx";
 
-import nextEcommerce from '../assets/nextjs-ecommerce.png';
+// import nextEcommerce from '../assets/nextjs-ecommerce.png';
+import ecommerce from '../assets/ecommerce.jpg';
 import lightingPlanner from '../assets/nextjs-lighting2.png';
 import webScrap from '../assets/webScrap.png';
 import interactiveCommentSection from '../assets/interactiveCommentSection.png';
@@ -13,16 +14,15 @@ import HarryPotter from '../assets/HarryPotter.png';
 const projectsData = [
     {
         id: 1,
-        title: 'E-Commerce Website',
-        projectType: 'NextJS Full Stack',
-        preview: 'https://ecommerce-admin-m4hosam.vercel.app/',
+        title: 'E-Commerce Store Wordpress',
+        projectType: 'Full Stack',
+        preview: 'https://helwachicken.com/',
         github: 'https://github.com/m4hosam/',
-        skills: ['NextJS', 'TypeScript', 'MYSQL', 'TailwindCSS', 'Prisma'],
-        image: nextEcommerce,
-        description: ['Developed an efficient ecommerce website with NextJS, TypeScript, and MySQL, improving page load speed and SEO.',
-            'Created a dynamic product page with advanced shopping cart features, enhancing user experience and interaction.',
-            'Featuring iconic characters from the Harry Potter universe, the game offers a fun and engaging way to interact with the magical world of Hogwarts.Integrated NextAuth for secure user registration, login, and personalized account management including efficient checkout.',
-            'Designed a comprehensive admin dashboard for order management, product updates, and insightful sales reporting.'
+        skills: ['Wordpress', 'Woo-commerce', 'Caching', 'CSS', 'Google Cloud Platform'],
+        image: ecommerce,
+        description: ['Developed and launched a bilingual WooCommerce store with optimized UI/UX, implementing custom payment gateways and automated order processing systems',
+            'Cut setup costs by 90% through strategic resource management and Google Cloud deployment, while maintaining enterprise‑level security standards and backup systems',
+            'Boosted site performance by 70% via CDN implementation, caching, and image optimization, resulting in 40% increase in customer retention',
         ]
     },
     {

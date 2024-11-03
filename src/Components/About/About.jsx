@@ -42,10 +42,10 @@ export default function About() {
                 </Typography>
 
                 <Typography sx={{ fontFamily: 'inherit', fontSize: '17px', mb: 1 }} color="var(--white3)">
-                    Over the past 2 years, I have honed my skills and expertise in
-                    developing a range of software, from all different websites to mobile apps.
-                    I take great pride in breaking down complex problems into smaller,
-                    more manageable pieces, and working my way up to finding the right solutions.
+                    My graduation project involved developing an AI‑driven question answering system with pre‑trained machine
+                    learning models. I’ve developed high‑performance applications, led projects, and collaborated directly with clients. I am currently focused on
+                    expanding my knowledge of backend technologies, including Kafka brokers for distributed streaming, Redis for caching and Kubernetes for con‑
+                    tainer orchestration. I am eager to bring my expertise to new challenges.
                 </Typography>
 
             </Box>

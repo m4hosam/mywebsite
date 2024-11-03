@@ -32,7 +32,7 @@ function Header(props) {
 
 
 export default function Bio() {
-    const bio = `Experienced Full-Stack Developer with over 3 years
+    const bio = `Experienced Full-Stack Developer with over 2 years
                 of hands-on project experience in developing Desktop, Android and Web apps.
                 Passionate about problem-solving and algorithmic challenges.`
 
@@ -63,7 +63,7 @@ export default function Bio() {
             <Box sx={{ width: { xs: '90%', md: '40%' }, mt: { xs: 7, md: 0 } }} >
                 <Typography variant="h5" color="var(--green3)">Hi, I'm</Typography>
                 <Header text="Mohamed Hosam" />
-                <Typography sx={{ marginBottom: '1rem', fontSize: { xs: "18px", lg: '21px' } }} variant="h5" color="var(--green1)">I create NextJS applications</Typography>
+                <Typography sx={{ marginBottom: '1rem', fontSize: { xs: "18px", lg: '21px' } }} variant="h5" color="var(--green1)">Full Stack | Software Engineer</Typography>
                 <Typography variant="h8" color="var(--white3)">{bio}</Typography>
             </Box>
 
